@@ -1,0 +1,50 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Install portfolio dependencies",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"install"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Install and build portfolio",
+			"type": "shell",
+			"command": "cmd",
+			"args": [
+				"/c",
+				"cd /d \"c:\\Users\\USER\\.vscode\\wdd430-portfolio\\wdd430-portfolio-\" && npm.cmd install && npm.cmd run build"
+			],
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Install Vercel CLI globally",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"i",
+				"-g",
+				"vercel"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Install Vercel CLI globally via npm.cmd",
+			"type": "shell",
+			"command": "npm.cmd",
+			"args": [
+				"i",
+				"-g",
+				"vercel"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}
